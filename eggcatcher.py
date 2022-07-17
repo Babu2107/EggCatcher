@@ -8,7 +8,7 @@ screen=pygame.display.set_mode((500,500))
 con=True
 score=0
 drop=3
-#breaksound=mixer.Sound('crack.wav')
+breaksound=mixer.Sound('crack.wav')
 pygame.display.set_caption("EGG CATCHER")
 icon=pygame.image.load("logo.png")
 backim=pygame.image.load("farmback.png")
@@ -88,7 +88,7 @@ while con:
         j=random.randint(0,4)
         drop-=1
 
-        #breaksound.play()
+        breaksound.play()
         ey=70   
     if(drop==0):
         gameover()
